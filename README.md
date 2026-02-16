@@ -1,3 +1,3 @@
 # The-Data-Science-Journey
-Hellowww Everyone
-
+Hellowww Everyone...
+Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendokumentasikan pembelajaran yang penting terkhusus nya dalam bidang Data Science
