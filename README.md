@@ -8,3 +8,6 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 4. Kaggle
 5. Github
 6. Someone?
+
+# Log Update
+- File management handling follow Zenithera
