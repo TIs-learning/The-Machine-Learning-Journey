@@ -12,4 +12,5 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 # Log Update
 - File management handling follow Zenithera
 - Data Preprocessing
+- Logistic Regression Params
 - Decision Tree Basic 
