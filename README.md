@@ -14,4 +14,5 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 - Data Preprocessing
 - vl
 - Logistic Regression Params
-- Decision Tree Basic 
+- Decision Tree Basic
+- Struture Folder Project
