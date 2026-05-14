@@ -16,3 +16,4 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 - Logistic Regression Params
 - Decision Tree Basic
 - Struture Folder Project
+- ROC AUC Curve
