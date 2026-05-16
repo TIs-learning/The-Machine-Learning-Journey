@@ -17,3 +17,4 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 - Decision Tree Basic
 - Struture Folder Project
 - ROC AUC Curve
+- Sensivity and specifity
