@@ -130,8 +130,6 @@ Kelebihan Jupyter:
 * Mendukung Markdown & LaTeX
 * Sangat cocok untuk analisis data
 
-![Jupyter Example](./images/ipynb_ex1.png)
-
 ---
 
 ### Install Jupyter
@@ -169,9 +167,6 @@ Akan terbuka di browser:
 ```
 http://localhost:8888/
 ```
-
-![Jupyter UI](./images/ipynb_ex2.png)
-
 ---
 
 ### Referensi Jupyter
