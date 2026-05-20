@@ -1,102 +1,208 @@
-## Bab 1: Memberi Komputer Kemampuan untuk Belajar dari Data
+# 📘 Bab 1: Memberi Komputer Kemampuan untuk Belajar dari Data
 
 **Bab 1 tidak berisi contoh kode apa pun.**
 
-Plt.savet(gambar/06_05.png, dpi=300)
+---
 
-## Menginstal paket Python
+## 🐍 Menginstal Python
 
-Python tersedia untuk ketiga sistem operasi utama — Microsoft Windows, macOS, dan Linux — dan penginstal, serta dokumentasinya, dapat diunduh dari situs web resmi Python: https://www.python.org.
+Python tersedia untuk tiga sistem operasi utama: **Windows, macOS, dan Linux**.
+Silakan unduh installer resmi di:
 
-Buku ini ditulis untuk Python versi`>= 3.7.0`, dan direkomendasikan
-Anda menggunakan Python 3 versi terbaru yang tersedia saat ini,
-meskipun sebagian besar contoh kode mungkin juga kompatibel dengan versi lama Python 3 dan Python`>= 2.7.10`. Jika Anda memutuskan untuk menggunakan Python 2.7 untuk mengeksekusi contoh kode, pastikan Anda mengetahui perbedaan utama antara kedua versi Python. Ringkasan bagus tentang perbedaan antara Python 3 dan 2.7 dapat ditemukan di https://wiki.python.org/moin/Python2orPython3.
+👉 [https://www.python.org](https://www.python.org)
 
-**Catatan**
+Buku ini ditulis untuk Python versi:
 
-Anda dapat memeriksa versi default Python Anda saat ini dengan menjalankan
+```
+>= 3.7.0
+```
 
-$ ular python -V
+Disarankan menggunakan versi Python 3 terbaru. Sebagian besar kode masih kompatibel dengan Python lama, termasuk:
 
-Dalam kasus saya, itu kembali
+```
+>= 2.7.10
+```
 
+Namun, jika menggunakan Python 2.7, pastikan memahami perbedaan utamanya:
+
+👉 [https://wiki.python.org/moin/Python2orPython3](https://wiki.python.org/moin/Python2orPython3)
+
+---
+
+### 🔎 Cek Versi Python
+
+Gunakan perintah berikut di terminal:
+
+```bash
+python -V
+```
+
+Contoh output:
+
+```bash
 Python 3.7.1 :: Continuum Analytics, Inc.
+```
 
+---
 
-#### Pip
+## 📦 Pip (Package Manager)
 
-Paket tambahan yang akan kita gunakan di seluruh buku ini dapat diinstal melalui program penginstal`pip`, yang telah menjadi bagian dari pustaka standar Python sejak Python 3.3. Informasi lebih lanjut tentang pip dapat ditemukan di https://docs.python.org/3/installing/index.html.
+`pip` adalah package manager bawaan Python (sejak versi 3.3).
 
-Setelah kita berhasil menginstal Python, kita dapat menjalankan pip dari terminal baris perintah untuk menginstal paket Python tambahan:
+Dokumentasi resmi:
+👉 [https://docs.python.org/3/installing/index.html](https://docs.python.org/3/installing/index.html)
 
-pip instal SomePackage
+### Install package
 
+```bash
+pip install SomePackage
+```
 
-(dengan`SomePackage`sebagai pengganti numpy, pandas, matplotlib, scikit-learn, dan sebagainya).
+Contoh:
 
-Paket yang sudah terinstal dapat diperbarui melalui flag`--upgrade`:
+```bash
+pip install numpy pandas matplotlib scikit-learn
+```
 
-pip instal SomePackage --upgrade
+### Update package
 
+```bash
+pip install SomePackage --upgrade
+```
 
-#### AnakondaDistribusi Python alternatif yang sangat direkomendasikan untuk komputasi ilmiah
-adalah Anaconda oleh Continuum Analytics. Anaconda adalah distribusi Python gratis—termasuk penggunaan komersial—yang siap untuk perusahaan yang menggabungkan semua paket Python penting untuk ilmu data, matematika, dan teknik dalam satu distribusi lintas platform yang mudah digunakan. Penginstal Anaconda dapat diunduh di https://docs.anaconda.com/anaconda/install/, dan panduan memulai cepat Anaconda tersedia di https://docs.anaconda.com/anaconda/user-guide/getting-started/.
+---
 
-Setelah berhasil menginstal Anaconda, kita dapat menginstal paket Python baru menggunakan perintah berikut:
+## 🐍 Anaconda (Rekomendasi untuk Data Science)
 
-conda menginstal SomePackage
+Anaconda adalah distribusi Python yang sangat cocok untuk:
 
-Paket yang ada dapat diperbarui menggunakan perintah berikut:
+* Data Science
+* Machine Learning
+* Komputasi ilmiah
 
-conda perbarui SomePackage
+Download di:
+👉 [https://docs.anaconda.com/anaconda/install/](https://docs.anaconda.com/anaconda/install/)
 
-Sepanjang buku ini, kita terutama akan menggunakan array multidimensi NumPy untuk menyimpan dan memanipulasi data. Kadang-kadang, kita akan menggunakan pandas, yang merupakan perpustakaan yang dibangun di atas NumPy yang menyediakan alat manipulasi data tingkat tinggi tambahan yang membuat bekerja dengan data tabular menjadi lebih nyaman. Untuk menambah pengalaman belajar kita dan memvisualisasikan data kuantitatif, yang seringkali sangat berguna untuk memahaminya secara intuitif, kita akan menggunakan perpustakaan matplotlib yang sangat dapat disesuaikan.
+Panduan:
+👉 [https://docs.anaconda.com/anaconda/user-guide/getting-started/](https://docs.anaconda.com/anaconda/user-guide/getting-started/)
 
-#### Paket inti
+### Install package dengan conda
 
-8. Film yang berhubungan dengan acara TV
+```bash
+conda install SomePackage
+```
 
-- [NumPy](http://www.numpy.org) >= 1.17.4
-- [SciPy](http://www.scipy.org) >= 1.3.1
-- [scikit-learn](http://scikit-learn.org/stable/) >= 0.22.0
-- [matplotlib](http://matplotlib.org) >= 3.1.0
-- [pandas](http://pandas.pydata.org) >= 0.25.3
+### Update package
 
-## Buku Catatan Python/JupyterBeberapa pembaca bertanya-tanya tentang`.ipynb`dari file kode -- file ini adalah notebook IPython. Saya memilih notebook IPython daripada skrip`.py`Python biasa, karena menurut saya skrip tersebut sangat bagus untuk proyek analisis data! Notebook IPython memungkinkan kita memiliki semuanya di satu tempat: Kode kita, hasil dari eksekusi kode, plot data kita, dan dokumentasi yang mendukung Markdown yang praktis dan sintaksis LaTeX yang kuat!
+```bash
+conda update SomePackage
+```
 
-![](./images/ipynb_ex1.png)
+---
 
-**Catatan Tambahan:** "IPython Notebook" baru-baru ini menjadi "[Jupyter Notebook](<http://jupyter.org>)"; Jupyter adalah proyek payung yang bertujuan untuk mendukung bahasa lain selain Python termasuk Julia, R, dan banyak lagi. Namun jangan khawatir, untuk pengguna Python, hanya ada perbedaan dalam terminologi (sekarang kami mengatakan "Jupyter Notebook" dan bukan "IPython Notebook").
+## 📚 Library yang Digunakan
 
-Notebook Jupyter dapat diinstal seperti biasa melalui pip.
+Dalam buku ini kita akan menggunakan:
 
-$ pip instal buku catatan jupyter
+* **NumPy** → manipulasi array multidimensi
+* **pandas** → pengolahan data tabular
+* **matplotlib** → visualisasi data
 
-Alternatifnya, kita dapat menggunakan penginstal Conda jika kita menginstal Anaconda atau Miniconda:
+---
 
-$ conda instal buku catatan jupyter
+## ⚙️ Paket Inti
 
-Untuk membuka notebook Jupyter, kami`cd`ke direktori yang berisi contoh kode Anda, misalnya.
-    $ cd ~/kode/buku-mesin-pembelajaran python
+* [NumPy](http://www.numpy.org) >= 1.17.4
+* [SciPy](http://www.scipy.org) >= 1.3.1
+* [scikit-learn](http://scikit-learn.org/stable/) >= 0.22.0
+* [matplotlib](http://matplotlib.org) >= 3.1.0
+* [pandas](http://pandas.pydata.org) >= 0.25.3
 
-dan luncurkan`jupyter notebook`dengan mengeksekusi
+---
 
-$buku catatan jupyter
+## 📓 Jupyter Notebook
 
-Jupyter akan dimulai di browser default kami (biasanya berjalan di [http://localhost:8888/](http://localhost:8888/)). Sekarang, kita cukup memilih notebook yang ingin Anda buka dari menu Jupyter.
+File dengan ekstensi `.ipynb` adalah **Jupyter Notebook**.
 
-![](./images/ipynb_ex2.png)
+Kelebihan Jupyter:
 
-Untuk informasi selengkapnya tentang notebook Jupyter, saya merekomendasikan [Panduan Pemula Jupyter](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html) dan [Dasar-Dasar Notebook Jupyter](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html).
+* Menggabungkan kode + output + visualisasi + dokumentasi
+* Mendukung Markdown & LaTeX
+* Sangat cocok untuk analisis data
 
-## Lab Jupyter Alternatif untuk Jupyter Notebook, yang disebut Jupyter Lab, dirilis pada tahun 2018. Ia beroperasi dengan jenis file`.ipynb`yang sama tetapi menawarkan beberapa fitur tambahan di antarmuka browser. Apakah Anda menggunakan Jupyter Notebook atau Jupyter Lab adalah masalah preferensi, namun
+![Jupyter Example](./images/ipynb_ex1.png)
 
-Jupyter Lab dapat diinstal melalui
+---
 
-$ conda install -c conda-forge jupyterlab
-    
-dan mirip dengan memulai Jupyter Notebooks, Anda dapat menjalankan perintah
+### Install Jupyter
 
-$ laboratorium jupyter
-    
-di terminal baris perintah Anda untuk meluncurkan sesi Jupyter Lab di browser Anda. Untuk informasi lebih lanjut tentang proyek Jupyter Lab, silakan kunjungi dokumentasi resmi di https://jupyterlab.readthedocs.io/en/stable/,
+#### Dengan pip
+
+```bash
+pip install notebook
+```
+
+#### Dengan conda
+
+```bash
+conda install notebook
+```
+
+---
+
+### Menjalankan Jupyter
+
+Masuk ke folder project:
+
+```bash
+cd ~/kode/buku-machine-learning
+```
+
+Lalu jalankan:
+
+```bash
+jupyter notebook
+```
+
+Akan terbuka di browser:
+
+```
+http://localhost:8888/
+```
+
+![Jupyter UI](./images/ipynb_ex2.png)
+
+---
+
+### Referensi Jupyter
+
+* [https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
+* [https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html)
+
+---
+
+## 🚀 JupyterLab (Alternatif Modern)
+
+JupyterLab adalah versi lebih modern dari Jupyter Notebook.
+
+### Install
+
+```bash
+conda install -c conda-forge jupyterlab
+```
+
+### Menjalankan
+
+```bash
+jupyter lab
+```
+
+Dokumentasi resmi:
+👉 [https://jupyterlab.readthedocs.io/en/stable/](https://jupyterlab.readthedocs.io/en/stable/)
+
+---
+
+## 📝 Catatan
+
+* "IPython Notebook" sekarang dikenal sebagai **Jupyter Notebook**
+* Jupyter mendukung banyak bahasa selain Python (R, Julia, dll)
