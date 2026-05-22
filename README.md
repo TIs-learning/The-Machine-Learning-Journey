@@ -18,3 +18,4 @@ Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendo
 - Struture Folder Project
 - ROC AUC Curve
 - Sensivity and specifity
+- Restruktur folder sebelum deep learning
