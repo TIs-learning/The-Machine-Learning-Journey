@@ -1,21 +1,7 @@
 # The-Machine-Learning-Journey
 Hellowww Everyone...
-Repository ini adalah repository dummy yang digunakan secara pribadi untuk mendokumentasikan pembelajaran yang penting terkhusus nya dalam bidang Data Analyst / Data Science / Data Engineering / Machine Learning / Deep Learning,....
+Repository ini adalah repository pribadi yang digunakan untuk mendokumentasikan pembelajaran yang ingin saya dokumentasikan terkhusus nya dalam bidang Machine Learning, Sebelum melangkah lebih jauh saya ingin menulis Roadmap yang saya lakukan di Repository ini, Untuk kebanyakan Bagian disini saya kebanyakan akan Mencontoh Pembelajaran AdilShamim8 (github) saya menemukan githubnya secara tidak sengaja dan saya pikir ini cukup bagus dan rapih.
 
-1. Roadmap (Utama, tapi sering berubah): References: https://roadmap.sh/machine-learning
-2. Youtube
-3. Book
-4. Kaggle
-5. Github
-6. Someone?
+# 1. Pengenalan Machine Learning
+  - Belajar Python
 
-# Log Update
-- File management handling follow Zenithera
-- Data Preprocessing
-- Update per bagian Chap Py
-- Logistic Regression Params
-- Decision Tree Basic
-- Struture Folder Project
-- ROC AUC Curve
-- Sensivity and specifity
-- Restruktur folder sebelum deep learning
