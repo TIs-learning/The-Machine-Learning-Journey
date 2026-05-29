@@ -18,5 +18,6 @@ Repository ini adalah repository pribadi yang digunakan untuk mendokumentasikan 
   - Belajar Exploratory Data Analysis
   - Belajar Preprocessing
   - Belajar Model Machine Learning
+  - Belajar Model Evaluation
 
 Selebihnya akan berjalan sesuai pengalaman pribadi lanjutan saya...
