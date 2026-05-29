@@ -1,1 +1,0 @@
-Belajar Paralel dengan Model
