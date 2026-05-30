@@ -1,0 +1,1555 @@
+
+# Belajar Python [Dasar] - 03 - Cara Kerja Program dan bytecode.
+"""
+print("helloworld")
+"""
+
+# Belajar Python [Dasar] - 04 - Mengenal Variabel.
+ 
+# Variabel adalah tempat untuk menyimpan data 
+"""
+a = 7
+b = 4
+c = a + b
+print (c)
+c = a - b
+print(c)
+print("anak si budi ada = ",b)
+print("anak si asep ada = ",c)
+"""
+
+# Penamaan variabel
+# 1. Tidak boleh diawali dengan angka
+# 2. Tidak boleh menggunakan spasi
+# 3. Tidak boleh menggunakan karakter spesial
+# 4. Tidak boleh menggunakan kata kunci 
+# 5. Tidak boleh menggunakan huruf kapital diawal cth Zvariabel
+
+# Belajar Python [Dasar] - 05 - Tipe Data.
+ 
+# Tipe data Integer = tidak mempunyai angka koma / desimal
+"""banyak_esbuah = 100
+print("esbuah ada = ", banyak_esbuah)
+print("-bertipe = ", type(banyak_esbuah))
+
+# Tipe data Float = mempunyai angka koma / desimal
+jumlah_air = 70.5
+print("air tertampung = ", jumlah_air)
+print("-bertipe = ", type(jumlah_air))
+      
+# Tipe data String = kumpulan karakter
+nama = "budi hartono"
+print("data nama = ", nama)
+print("-bertipe = ", type(nama))
+
+# Tipe data Boolean = True / false
+budi_masih_hidup = True
+print("apakah budi masih hidup = ", budi_masih_hidup)
+print("-bertipe = ", type(budi_masih_hidup))"""
+# Belajar Python [Dasar] - 06 - Casting Tipe Data.
+
+# Casting = mengubah tipe data
+"""print("====INTEGER TO ALL====")
+data_integer = 100
+print("data integer = ", data_integer, "-bertipe data = ", type(data_integer))
+
+data_float = float(data_integer)
+data_str = str(data_integer)
+data_bool  = bool(data_integer)
+print("data_float = ", data_float, "-bertipe data = ", type(data_float))
+print("data_str = ", data_str, "-bertipe data = ", type(data_str))
+print("data_bool = ", data_bool, "-bertipe data = ", type(data_bool))
+
+print("====FLOAT TO ALL====")
+
+data_float = 43.8
+print("data float = ", data_float, "-bertipe data = ", type(data_float))
+
+data_int = int(data_float)
+data_str = str(data_float)
+data_bool  = bool(data_float)
+print("data_int = ", data_int, "-bertipe data = ", type(data_int))
+print("data_str = ", data_str, "-bertipe data = ", type(data_str))
+print("data_bool = ", data_bool, "-bertipe data = ", type(data_bool))
+
+
+print("====STRING TO ALL====")
+data_str = "100"
+print("data str = ", data_str, "-bertipe data = ", type(data_str))
+
+data_int = int(data_str)
+data_float = float(data_str)
+data_bool = bool(data_str)
+print("data_int = ", data_int, "-bertipe data = ", type(data_int))
+print("data_float = ", data_float, "-bertipe data = ", type(data_float))
+print("data_bool = ", data_bool, "-bertipe = ", type(data_bool))
+
+print("====BOOLEAN TO ALL====")
+data_bool = True    
+print("data bool = ", data_bool, "-bertipe = ", type(data_bool))
+
+data_int = int(data_bool)
+data_float = float(data_bool)   
+data_str = str(data_bool)
+print("data_int = ", data_int, "-bertipe = ", type(data_int))
+print("data_float = ", data_float, "-bertipe = ", type(data_float))
+print("data_str = ", data_str, "-bertipe = ", type(data_str))"""
+
+# Belajar Python [Dasar] - 07 - Mengambil Input Data dari User.
+
+# input() = untuk meminta input dari user
+"""data = input("masukan data = ")
+print("data = ", data, "type data = ", type(data))
+
+data_integer = int(input("masukan angka = "))
+print("data_integer = ", data_integer, "type data = ", type(data_integer))
+databool = bool(int(input("benar atau salah = ")))
+print("data = ", databool, "type data = ", type(databool))"""
+
+# Belajar Python [Dasar] - 08 - Operasi Aritmatika
+ 
+# Operasi Aritmatika Penjumlahan
+'''
+a = 7
+b = 6
+hasil = a + b
+print(a, "+", b, "=", hasil)
+
+# Operasi Aritmatika Pengurangan
+a = 4
+b = 5
+hasil = a - b
+print(a, "-", b, "=", hasil)
+
+# Operasi Aritmatika Perkalian
+a = 6
+b = 8
+hasil = a * b
+print(a, "x", b, "=", hasil)
+
+# Operasi Aritmatika Pembagian
+a = 10
+b = 2
+hasil = a / b
+print(a, "/", b, "=", hasil)
+
+# Operasi Aritmatika pangkat
+a = 2
+b = 3   
+hasil = a ** b
+print(a, "^", b, "=", hasil)
+
+# Operasi Aritmatika modulus/sisa bagi
+a = 5
+b = 7
+hasil = a % b
+print(a, "%", b, "=", hasil)
+
+# Operasi Aritmatika floor division
+a = 5
+b = 7
+hasil = a // b
+
+# Urutan Prioritas Operasi Aritmatika
+# 1. ()
+# 2. ** pangkat
+# 3. * / // %
+# 4. + -
+# 5. = assignment'''
+
+# Belajar Python [Dasar] - 09 - Latihan Perhitungan Sederhana
+
+"""
+# Konversi suhu dari Celcius ke Fahrenheit, Reamur, Kelvin
+celcius = float(input('masukan suhu celcius = '))
+print('suhu celcius = ',celcius)
+
+fahrenheit = ((9/5) * celcius) + 32
+print('suhu fahrenheit = ',fahrenheit)
+
+reamur = ((4/5) * celcius)
+print('suhu reamur = ',reamur)
+
+kelvin = celcius + 273
+print('suhu kelvin = ',kelvin)
+
+fahrenheit = float(input('masukkan suhu farenheit = ',))
+kelvin = (fahrenheit + 459.67) * (5/9)
+print('kelvin = ',kelvin)
+
+kelvin = float(input('masukkan suhu kelvin = ',))
+fahrenheit = (kelvin * 9/5) - 459.67
+print('suhu fahrenheit = ',fahrenheit)
+"""
+
+# Belajar Python [Dasar] - 10 - Operasi Komparasi
+
+# operasi komperasi
+# setiap hasil dari operasi komperasi adalah boolean
+# 1. >      (lebih dari)
+# 2. <      (kurang dari)
+# 3. >=     (lebih dari sama dengan)
+# 4. <=     (kurang dari sama dengan)
+# 5. ==     (sama dengan)
+# 6. !=     (tidak sama dengan)
+# 7. is     (apakah sama dengan)
+# 8. is not (apakah tidak sama dengan)
+
+# a = 5
+# b = 7
+# hasil = a > b
+# hasil = a < b
+# hasil = a >= b
+# hasil = a <= b
+# hasil = a == b
+# hasil = a != b
+# print(a, ">", b, "=", hasil)
+# print(a, "<", b, "=", hasil)
+# print(a, ">=", b, "=", hasil,)
+# print(a, "<=", b, "=", hasil)
+# print(a, "==", b, "=", hasil)
+# print(a, "!=", b, "=", hasil)
+
+# operasi boolean / logika
+# not,or,and
+# not = kebalikan dari nilai boolean
+# or = jika satu true maka hasilnya true
+# and = akan true jika keduanya true
+# xor = exclusive or, jika salah satu true maka hasilnya true
+# xor = jika keduanya true maka hasilnya false
+
+# Belajar Python [Dasar] - 11 - Operasi Logika atau Boolean
+'''
+print('=====OPERASI BOOLEAN=====')
+
+a = True
+print('data a = ',a)
+print('--------------NOT')
+b = not a
+print('data b = ',b)
+print('--------------OR')
+a = False
+b = True
+c = a or b
+print('data a = ', a, 'or', b, '=', c)
+a = False
+b = False
+c = a or b 
+print('data a =', a, 'or', b, '=', c)
+a = True
+b = False
+c = a or b
+print('data a = ', a, 'or', b, '=', c)
+a = True
+b = True
+c = a or b
+print('data a = ', a, 'or', b, '=', c)
+print('--------------AND')
+a = False
+b = True
+c = a and b
+print('data a = ', a, 'and', b, '=', c)
+a = False
+b = False
+c = a and b 
+print('data a =', a, 'and', b, '=', c)
+a = True
+b = False
+c = a and b
+print('data a = ', a, 'and', b, '=', c)
+a = True
+b = True
+c = a and b
+print('data a = ', a, 'and', b, '=', c)
+# operasi bitwise
+print('----------------XOR')
+a = False
+b = True
+c = a ^ b
+print('data a = ', a, 'xor', b, '=', c)
+a = False
+b = False
+c = a ^ b 
+print('data a =', a, 'xor', b, '=', c)
+a = True
+b = False
+c = a ^ b
+print('data a = ', a, 'xor', b, '=', c)
+a = True
+b = True
+c = a ^ b
+print('data a = ', a, 'xor', b, '=', c)'''
+
+# Belajar Python [Dasar] - 12 - Latihan Komparasi dan Logika
+
+# ++++++++++3------------10+++++++++
+# membuat program mendetekksi angka tersebut dimana
+# apakah kurang dari 3 atau lebih dari 10
+'''
+input_angka = float(input('masukan angka = '))
+iskurangdari_3 = (input_angka < 3)
+print('kurang dari 3 = ',iskurangdari_3)
+islebihdari_10 = (input_angka > 10)
+print('lebih dari 10 = ',islebihdari_10)'''
+
+'''#----------3++++++++=10----------
+# membuat program mendetekksi angka tersebut dimana
+input_angka = float(input('masukan angka = '))
+islebihdari3 = (input_angka >= 3)
+print('lebih dari 3 = ',islebihdari3)
+iskurangdari10 = (input_angka <= 10)
+print('kurang dari 10 = ',iskurangdari10)'''
+
+#----0++++5----8++++11----
+# membuat program mendetekksi angka tersebut dimana
+
+'''
+input_angka = float(input('masukan angka = '))
+islebihddari_0 = (input_angka > 0)
+iskurangdari_5 = (input_angka < 5)
+islebihdari_8 = (input_angka > 8)
+iskurangdari_11 = (input_angka < 11)
+print('lebih dari 0 = ',islebihddari_0)
+print('kurang dari 5 = ',iskurangdari_5)
+print('lebih dari 8 = ',islebihdari_8)
+print('kurang dari 11 = ',iskurangdari_11) 
+
+iscorrect = (islebihddari_0 and iskurangdari_5) or (islebihdari_8 and iskurangdari_11)
+print('apakah masuk dalam urutan = ',iscorrect)'''
+
+#++++0----5++++8----11++++
+'''
+input_angka = float(input('masukan angka = '))
+iskurangdari_0 = (input_angka < 0)
+islebihdari_5 = (input_angka > 5)
+iskurangdari_8 = (input_angka < 8)
+islebihdari_11 = (input_angka > 11)
+print('kurang dari 0 = ',iskurangdari_0)
+print('lebih dari 5 = ',islebihdari_5)
+print('kurang dari 8 = ',iskurangdari_8)
+print('lebih dari 11 = ',islebihdari_11) 
+
+iscorrect = (iskurangdari_0) or (islebihdari_5 and iskurangdari_8) or ( islebihdari_11 )
+print('apakah masuk dalam urutan = ',iscorrect)'''
+
+# Belajar Python [Dasar] - 14 - Operator Assignment
+# operator assignment
+'''
+a = 5
+print('nilai a adalah ',a)
+a += 3
+print('nilai a menjadi ',a)
+a -= 2
+print('nilai a menjadi ',a)
+a *= 4
+print('nilai a menjadi ',a)
+a /= 2
+print('nilai a menjadi ',a)
+a %= 3
+print('nilai a menjadi ',a)
+a **= 2
+print('nilai a menjadi ',a)
+a //= 2
+print('nilai a menjadi ',a)
+
+c = True
+print('nilai c ',c)
+c |= False
+print('nilai c or adalah ',c)
+# berlaku untuk semua operator'''
+
+# Belajar Python [Dasar] - 15 - Pengenalan String
+
+# pengenalan string
+# string adalah kumpulan karakter
+# petik 2 atau petik 1 sama saja
+# //,\n enter,\t tab,\b backspace
+# cara menyatukan string dengan +
+# cara menghitung banyak karakter pada suatu karakter gunakan "len()"
+
+'''
+# mengecek suatu karakter ada di dalam string
+nama_lengkap = "reyhan sayang indonesia"
+panjang_nama = len(nama_lengkap)
+print('pangjang dari nama ',nama_lengkap + ' ' + str(panjang_nama))
+print('apakah ada huruf r = ', 'r' in nama_lengkap) # dapat diganti not in untuk kebalikan
+
+# mengulang string 
+print(17*'kocaklawakbego')# dapat dibalik urutannya
+#indexing string
+print('index ke 3 =', nama_lengkap[3])
+print('index ke 3 sampai 5 = ', nama_lengkap[3:6]) # 6 tidak diikutkan
+print('index ke 3 sampai akhir = ', nama_lengkap[3:])
+print('index ke 0 sampai 5 = ', nama_lengkap[:6]) # 0 diikutkan
+print('index ke 0 sampai akhir = ', nama_lengkap[:]) # 0 diikutkan
+print('index ke -1 = ', nama_lengkap[-1]) # index terakhir
+print('index ke -1 sampai -5 = ', nama_lengkap[-1:-5]) # index terakhir
+
+nama_lengkap = "reyhan sayang indonesia"
+print('huruf paling besar adalah = ', max(nama_lengkap))
+print('huruf paling kecil adalah = ', min(nama_lengkap))'''
+
+# Belajar Python [Dasar] - 16 & 17- Operasi dan manipulasi string
+'''
+#mengubah case string
+lukocak = "reyhan sayang indonesia"
+cek = lukocak.islower() # mengecek apakah semua huruf kecil
+print(lukocak + 'apakah lower = ', cek)
+# atau
+print('maksud upper ini ya = ', lukocak.upper())
+print('maksud lower ini ya = ', lukocak.lower())
+# bisa ditambahkan dengan isupper() atau islower() untuk mengecek
+print('lukocak apakah upper = ', lukocak.isupper())
+
+# adajuga yang lain seperti
+# isalpha() = apakah hanya berisi huruf
+# isdecimal() = apakah hanya berisi angka
+# isalnum() = apakah hanya berisi huruf dan angka
+# isspace() = apakah hanya berisi spasi,tab,enter
+# istitle() = apakah setiap kata diawali huruf kapital
+
+# startswith() = apakah diawali dengan
+# endswith() = apakah diakhiri dengan
+kocak = "reyhan sayang indonesia"
+cek_kata = 'reyhan sayang indonesia'.startswith('reyhan')
+print('apakah kocak diawali dengan reyhan = ', cek_kata)
+cek_kata = 'reyhan sayang indonesia'.endswith('indonesia')
+print('apakah kocak diakhiri dengan indonesia = ', cek_kata)
+
+# penggabungan komponen join() split
+pisah = ['reyhan', 'sayang', 'indonesia']
+gabungkan = ','.join(pisah)
+print(pisah)
+print(gabungkan)
+
+gabungkan = ' '.join(pisah)
+print(gabungkan)
+
+gabungkan = ' kok bisa '.join(pisah)
+print(gabungkan)
+
+caramisahin ='reyhan kok bisa sayang kok bisa indonesia'
+pisah = 'reyhan kok bisa sayang kok bisa indonesia'.split(' kok bisa ')
+print(pisah)
+
+# alokasi karater rjust() ljust() center()
+
+kanan = 'reyhan sayang indonesia'.rjust(40)
+print("'" + kanan + "'")
+kiri = 'reyhan sayang indonesia'.ljust(40)
+print("'" + kiri + "'")
+tengah = 'reyhan sayang indonesia'.center(40)
+print("'" + tengah + "'")
+tengah = tengah.strip() # menghilangkan spasi di kiri dan kanan
+print("'" + tengah + "'")
+tengah = 'reyhan sayang indonesia'.center(40,'1')
+print("'" + tengah + "'")
+"""
+
+# Belajar Python [Dasar] - 18 - Format String
+nama = ' reyhan '
+format_str = f'nama = {nama}'
+print(format_str)
+
+boolean = True
+format_str = f'boolean = {boolean}'
+print(format_str)
+
+angka = 100
+format_str = f'angka = {angka}'
+print(format_str)
+
+angka = 2000000000
+format_str = f'jutaan = {angka:,}'
+print(format_str)
+
+angka = 200004.987654321
+format_str = f'jutaan = {angka:.2f}'  # .2f untuk 2 angka di belakang koma
+print(format_str)
+
+angka = 2004.9324
+format_str = f'jutaan = {angka:11.2f}'  # .2f untuk 2 angka di belakang koma
+print(format_str)
+
+angka_minus = -10
+angka_plus = 10
+format_minus = f'angka minus = {angka_minus:+d}'  # :d untuk integer
+format_plus = f'angka plus = {angka_plus:+d}'
+print(format_minus)
+print(format_plus)
+
+persentase = 0.025
+format_persentase = f'persentase = {persentase:.1%}'  # .2% untuk 2 angka di belakang koma
+print(format_persentase)
+
+# didalam kurung kurawal bisa melakukan operasi
+harga  = 10000
+jumlah_barang_yang_dibeli= 5
+forma_string = f'harga total = Rp.{harga * jumlah_barang_yang_dibeli:,}'
+print(forma_string)
+
+# formatt angka lain (binary,octal,hexadecimal)
+angka = 100
+format_binary = f'binary = {bin(angka)}'  # b untuk binary
+format_octal = f'octal = {oct(angka)}'    # o untuk octal
+format_hex = f'hexadecimal = {hex(angka)}'  # x untuk hexadecimal
+print(format_binary)
+print(format_octal)
+print(format_hex)'''
+
+# Belajar Python [Dasar] - 19 - String width and Alignment
+# width dan alig multiline
+
+"""
+#Data
+data_nama = "reyhan suka rizki"
+data_umur = 18
+data_tinggi = 170.5
+data_nomor_sepatu = 43
+
+#Format String
+data_string = f"nama = {data_nama},\numur = {data_umur},\ntinggi = {data_tinggi},\nukuran sepatu = {data_nomor_sepatu}"
+print(data_string) 
+# format string diatas disebut multiline jika standart tidak menggunakan \n
+
+# string multiline (kutip triplets)
+data_string = f"nama = {data_nama}
+umur = {data_umur}
+tinggi = {data_tinggi}
+ukuran_sepatu = {data_nomor_sepatu}
+"""
+
+'''
+print("\n"+5*"="+"Data String"+5*"=")
+print(data_string)
+# mengatur lebar 
+data_nama = 'reyhan'
+data_string = f"""nama            = {data_nama}
+umur            = {data_umur}
+tinggi          = {data_tinggi}
+ukuran sepatu   = {data_nomor_sepatu}
+"""
+print("\n"+5*"="+"Data String"+5*"=")
+print(data_string)
+"""
+
+# Belajar Python [Dasar] - 20 - Latihan Date and Time
+# Date and Time (latihan)
+"""
+import datetime as dt
+hari_ini = dt.date.today()
+print(hari_ini) 
+print(f"hari ini adalah hari = {hari_ini:%A}")
+      
+tanggal_lahir = dt.date(2007, 12, 21)
+print(tanggal_lahir)
+
+print('silahkan masukan tanggal lahir anda')
+tahun = int(input('masukan tahun lahir anda = '))
+bulan = int(input('masukan bulan lahir anda = '))
+tanggal = int(input('masukan tanggal lahir anda = '))
+tanggal_lahir = dt.date(tahun, bulan, tanggal)
+print(f'tanggal lahir anda adalah = {tanggal_lahir:%A, %d %B %Y}')
+
+umur = hari_ini - tanggal_lahir
+tahun = umur.days // 365
+sisa_hari = umur.days % 365
+bulan = sisa_hari // 30
+hari = sisa_hari % 30
+print(f'umur anda adalah = {umur.days} hari')
+print(f'umur anda adalah = {umur.days // 365} tahun')
+print('hari tersisa =', sisa_hari)
+print(f'umur anda adalah = {tahun} tahun, {bulan} bulan, {hari} hari')
+'''
+
+#Belajar Python [Dasar] - 21 - IF dan ELSE Statement
+'''
+nama = input('siapa nama anda? ')
+
+if nama == 'reyhan':
+    print('halo mr.reyhan')
+else:
+    print('halo', nama)
+'''
+# Belajar Python [Dasar] - 22 - ELIF Statement
+'''
+nama = input('siapa nama anda? ')
+
+if nama == 'reyhan':
+    print('halo mr.reyhan')
+elif nama == 'ambas':
+    print('waduh mas ambasafat')
+else:
+    print('lu siapa?gua gak kenal', nama)
+'''
+
+# Belajar Python [Dasar] - 24 - For Loop (Perulangan)
+"""
+angka1 = 1, 2, 3, 4, 5
+for i in angka1 :
+    print('i yang sekarang adalah ',(i))
+
+print('akhir dari program 1\n\n')
+
+#ini dengan range 
+range_angka1 = range(9)
+for i in range_angka1:
+    print('i yang sekarang adalah ',(i))
+print('akhir dari program 2') 
+"""
+
+# Belajar Python [Dasar] - 25 - While Loop (Perulangan).
+
+"""
+angka = 0
+print('angka sekarang = ', angka)
+
+while angka < 10:
+    angka += 1
+    print('angka sekarang adalah ', angka)"""
+
+# Belajar Python [Dasar] - 26 - Continue dan Pass.
+    #(1) pass = dummy,tidak melakukan apa-apa
+'''
+angka = 0
+while angka < 10:
+    angka += 1
+    print('angka sekarang adalah ',angka)
+
+    if angka == 5:
+        print('angka sekarang adalah ', angka, 'tapi tidak akan ditampilkan')
+        pass  # tidak melakukan apa-apa, hanya untuk dummy
+    else:
+        print('angka sekarang adalah ', angka)
+'''
+
+
+    #(2) continue = melanjutkan ke iterasi berikutnya.
+'''
+angka = 0
+while angka < 10:
+    angka += 1
+    print('angka sekarang adalah ',angka)''' # aksi 1.
+
+'''
+if angka == 7:
+        continue'''# (melanjutkan ke aksi 1/skip aksi 2).
+    # saat ke 7 tidak akan ditampilkan angka sekarang = 7.  
+'''
+print('angka sekarang = ', angka)
+''' # aksi 2.
+
+# Belajar Python [Dasar] - 27 - Break.
+""""
+angka = 0
+while angka < 10:
+    angka += 1
+    print('angka sekarang adalah ',angka)
+
+    if angka == 3:
+        print('angka sekarang = ', angka)
+        break # langsung finish/selesai (lompat dari loop).
+    print('angka sekarang = ', angka)
+        
+print('akhir dari program')
+"""
+
+# Belajar Python [Dasar] - 29 -  (kumpulan data)
+"""
+angka1 = 1 
+angka2 = 2
+angka3 = 3
+# bisa disatukan menjadi,kumpulan data numbers
+data_angka = [1, 2, 3] 
+print('\ndata angka = ', data_angka)
+# kumpulan data string 
+data_string = ['reyhan', 'ambas', 'rizki']
+print('\ndata string = ', data_string)
+# kumpulan data boolean
+data_boolean = [True, False, True, True]
+print('\ndata boolean = ', data_boolean)
+# kumpulan data campuran
+data_campuran = [1, 'reyhan', True, 3.14]
+print('\ndata campuran = ', data_campuran)
+
+# cara alternatif membuat kumpulan data/list
+data_range = range(1, 11)  # dari 1 sampai 10
+print('\ndata range = ', data_range)
+data_list = list(data_range)  # mengubah range menjadi list
+print('\ndata list = ', data_list)
+
+# membuat list dengan for loop, list comprehension
+list_pake_for = [i**2 for i in range(1, 11)]
+print('\ndata list pake for = ', list_pake_for)
+# membuat list dengan menggunakan for pake if
+list_pake_for_if = [i for i in range(1, 11) if i %2 == 0]
+print('\ndata list pake for if = ', list_pake_for_if)
+
+# Belajar Python [Dasar] - 30 - Manipulasi List
+
+# index    0(-3)   1(-2)     2(-1)
+data = ['reyhan', 'riski', 'ambas']
+# mengambil data dari list
+data_0 = data[0]
+print('data pertama = ', data_0)
+
+data_terakhir = data[-1]  # index terakhir
+print('data terakhir = ', data_terakhir)
+
+data_reyhan = data[-3]
+print('data reyhan = ', data_reyhan)
+
+# mengambil info jumlah data dalam list
+panjang_data = len(data)
+print('panjang data = ', panjang_data)
+
+# memanipulasi data dari list 
+
+# menambhakan item pada list sesuai posisi
+print(f'data sebelum ditambah =', data)
+
+data.insert(2,'budi')
+print(f'data setelah ditambah =', data)
+
+# menambah di akhir list
+data.append('bambang')
+print(f'data setelah ditambah di akhir =', data)
+
+# menambah list dengan list
+data_baru = ['suherman', 'om botak']
+data.extend(data_baru)
+print(f'data setelah ditambah dengan list =', data)
+
+# merubah data
+# kita ubah data 2 menjadi udin
+data[2] = 'udin'
+print(f'data setelah diubah =', data)
+
+# menghapus data
+data.remove('bambang')  # menghapus data dengan nama
+print(f'data setelah menghapus bambang =', data)
+
+# meremove data paling belakang
+data.pop()  # menghapus data paling belakang
+print(f'data setelah menghapus data paling belakang =', data)
+
+# Belajar Python [Dasar] - 31 - Operasi List
+data_angka = [1, 5, 3,9, 7, 6, 5, 4, 8]
+print('data angka = ', data_angka)
+ # count data
+jumlah_data5 = data_angka.count(5)
+jumlah_data_6 = data_angka.count(6)
+print('jumlah data 5 = ', jumlah_data5)
+print('jumlah data 6 = ', jumlah_data_6)
+
+# ambil posisi data 
+data = ['reyhan', 'riski', 'ambas', 'budi', 'udin']
+print('data = ',data)
+index_ambas = data.index('ambas')
+print('index ambas = ', index_ambas)
+index_budi = data.index('budi')
+print('index budi = ', index_budi)
+"""
+
+# data.index('usep') (error karena tidak ada usep di list)
+# mengurutkan list 
+"""
+print(f'data angka sebelum diurutkan = , \n{data_angka}')
+data_angka.sort()  # mengurutkan data angka
+print(f'data angka setelah diurutkan = \n{data_angka}')
+print('data = {data}')
+data.sort()
+print(f'data setelah diurutkan = \n{data}')
+
+
+#balik listnya 
+data_angka.reverse()  # membalik urutan data angka
+print(f'data angka setelah dibalik = \n{data_angka}')
+data.reverse()  # membalik urutan data
+print(f'data setelah dibalik = \n{data}')
+"""
+
+# Belajar Python [Dasar] - 32 - Copy List
+
+# Teknik menduplikasi list
+"""
+a = ['reyhan', 'riski', 'ambas', 'budi', 'udin']
+print(f"a = {a}")
+
+b = a
+print(f"b = {b}")
+
+# kita akan merubah member dari a
+
+# ini akan merubah kedua list
+a[1] = "Rusdi"
+b.sort()  # mengurutkan b
+print(f"a = {a}")
+print(f"b = {b}")  # b juga berubah karena b adalah referensi dari a
+
+# addres dari list a dan b 
+print(f"address a = {hex(id(a))}")
+print(f"address b = {hex(id(b))}")  # address sama karena b adalah referensi dari a
+
+# menduplikasi list dengan cara scopy
+
+print("\n\nMenduplikasi list c dengan cara a.copy")
+c = a.copy()  # menduplikasi list a ke c
+
+print(f'address a = {hex(id(a))}')
+print(f'address b = {hex(id(b))}')
+print(f'address c = {hex(id(c))}')
+
+print(f"a = {a}")
+print(f"b = {b}")  
+print(f"c = {c}")  
+
+c[1] = "agus"
+print(f"a setelah diubah = {a}")
+print(f"b setelah diubah = {b}")
+print(f"c setelah diubah = {c}")  # c berubah tapi a dan b tidak berubah
+
+# Belajar Python [Dasar] - 33 - Nested List / List Bersarang
+data_0 = [1, 2]
+data_1 = [3, 4]
+
+data_list_biasa = [1, 2, 3, 4]
+
+print(f"data list biasa = {data_list_biasa}")
+
+list_2d = [data_0,data_1,data_list_biasa,6,7]
+print(f'list 2d = {list_2d}')
+
+# Contoh Penggunaan
+peserta_0 =['ucup',25,"laki-laki"]
+peserta_1 = ['otong', 30, 'laki-laki']
+peserta_2 = ['mimin', 20, 'perempuan']
+list_peserta = [peserta_0, peserta_1, peserta_2]
+print(f'list peserta = {list_peserta}')
+
+for peserta in list_peserta:
+    print(f'nama\t: {peserta[0]}')
+    print(f'umur\t: {peserta[1]}')
+    print(f'gender\t: {peserta[2]}\n')
+
+# dengan reference
+
+list_copy = list_peserta.copy()
+print(f'list peserta = {list_copy}')
+peserta_0[0] = "ayam jago"
+print(f'list peserta = {list_peserta}')
+print(f'list copy = {list_copy}')  # list copy juga berubah karena referensi
+"""
+
+# Belajar Python [Dasar] - 34 - Deep Copy Nested List
+"""
+data_0 = [1, 2]
+data_1 = [3, 4]
+
+data_2d = [data_0, data_1, 10]
+data_2d_copy = data_2d.copy()  # membuat copy dari data_2d
+
+print(f"data = {data_2d}")
+print(f"data copy = {data_2d_copy}")
+# mengambil data dari nested list
+
+data = data_2d[0][1]
+print(f"data = {data}")
+
+# address semuanya
+print(f'address asli = {hex(id(data_2d))}')
+print(f'address asli = {hex(id(data_2d))}')
+
+print('address dari member ke -1')
+print(f'address asli = {hex(id(data_2d[0]))}')
+print(f'address copy = {hex(id(data_2d_copy[0]))}')
+
+data_2d[0][1] = 5
+data_2d[2] = 8
+print(f"data = {data_2d}")
+print(f"data copy = {data_2d_copy}")
+
+# kita gunakan copy
+
+from copy import deepcopy
+data_2d = [data_0, data_1, 10]
+data_2d_deepcopy = deepcopy(data_2d)  # membuat copy dari data_2d
+
+print(f"address asli = {hex(id(data_2d))}")
+print(f"address copy = {hex(id(data_2d_deepcopy))}")
+
+print('address dari member ke -1')
+print(f'address asli = {hex(id(data_2d[0]))}')
+print(f'address copy = {hex(id(data_2d_deepcopy[0]))}')
+
+data_2d[0][1] = 30
+print(f"data = {data_2d}")
+print(f"data copy = {data_2d_copy}")
+print(f"data deep = {data_2d_deepcopy}")
+"""
+# Belajar Python [Dasar] - 35 - Looping List dan Enumerate
+
+# looping dari list
+# for loop
+"""
+kumpulan_angka = [4,3,2,5,6,1]
+
+for angka in kumpulan_angka:
+    print(f"angka = {angka}")
+
+peserta = ['ucup', 'dudung', 'ambas', 'budi', 'pak somat']
+for nama in peserta:
+    print(f"nama ={nama}")
+
+# for loop dan range
+kumpulan_angka = [10,5,4,2,6,5]
+
+panjang = len(kumpulan_angka)
+for i in range(panjang):
+    print(f"angka = {kumpulan_angka[i]}")
+
+# while
+print("\nWhie loop")
+kumpulan_angka = [10,5,4,2,6,5]
+
+panjang = len(kumpulan_angka) 
+i = 0
+
+while i < panjang:
+    print(f"angka = {kumpulan_angka[i]}")
+    i += 1
+# list comprehension
+print("\nLIST COMPREHENSION")
+data = ["ucup", 1,2,3,4,"otong"]
+
+[print(f"data={i}") for i in data]
+
+angka = [10,5,4,2,6,5]
+angka_kuadrat = [i**2 for i in angka]
+print(angka_kuadrat)
+
+# Enumerate
+print("\nENUMERATE")
+data_list = ["ucup", 1,2,4,7,"otong"]
+
+for index,data in enumerate(data_list):
+    print(f"index = {index}, data = {data}")
+"""
+# Belajar Python [Dasar] - 36 - Latihan List
+"""
+# program list buku 
+list_buku = []
+while True:
+    print("\n\n" + "="*40)
+    print("\t   MASUKAN JUDUL BUKU")
+    judul_buku = input("\nmasukan judul buku\t: ")
+    penulis = input('masukan penulis buku\t: ')
+
+    data_buku = [judul_buku,penulis]
+    list_buku.append(data_buku)
+
+    print("No. | Judul | Penulis ")
+    for index,buku in enumerate(list_buku):
+        print(f"{index+1}   | {buku[0]}   | {buku[1]}")
+
+    isLanjut = input("apakah akan dilanjutkan? (y/n)")
+    if isLanjut == "n":
+        break
+
+    print("="*40)
+    print("\t   PROGRAM SELESAI ")
+
+"""
+# Belajar Python [Dasar] - 37 - Tuples dan Set
+# list itu menggunakan kurung siku
+# data_list = [23,4,45,45,5] 
+# print(data_list)
+# tuples menggunakan kurung kembung
+# data_tuples = (21,23,34,9) 
+# print(data_tuples)
+
+# jika data tuples tidak bisa diubah,contoh:
+# data_tuples[2] = "ayam burhan" --> tidak bisa ngab jika tuples
+# data_tuples.append(1) --> gak bisa juga
+
+# sets (gk punya index)
+# data_sets = {34,42,4,34,5,54,7}
+# print(data_sets)
+
+# print(data_sets[2])# --> ini juga gak bisa diambil bang 
+
+# Belajar Python [Dasar] - 38 - Dictionary
+# list --> array, mengakses dengan menggunakan index
+
+# data_list = ["ucup", "dudung", "meymey"]
+# print(data_list[0])
+
+# dictiniory (dict) --> associative array
+# identifier --> key
+"""
+data_dict = {
+    "key" : "value",
+    "cp" : "ucup",
+    "dg" : "dudung",
+    "tg" : "otong",
+    "nmbr" : 100,
+    "list" : data_list
+}
+
+print(data_dict["cp"])
+print(data_dict["nmbr"])
+print(data_dict["list"])
+"""
+# Belajar Python [Dasar] - 39 - Operasi Dictionary
+# operator dictinioary
+"""
+data_dict = {
+    "cup": "ucup",
+    "tong": "surotong",
+    "dung": "dudung surudung"
+}
+"""
+# LENDICT = len(data_dict)
+# print(f'panjang dictinoary = {LENDICT}')
+
+# mengecek key exist atau tidak 
+# KEY = "cup"
+# CHECKKEY = KEY in data_dict
+# print(f"apakah {KEY} ada di data_dict = {CHECKKEY}")
+
+# mengakses value (read) dengan get
+# print(data_dict["cup"])
+# print(data_dict.get("cup"))
+# print(data_dict.get("ayam","TIDAK ADA")) 
+# ----> Jika dengan get key yang tidak ada menjadi none
+# ----> Jika tidak menggunakan get key tidak ada 
+#       akan ada error
+# ----> Bisa juga dengan menambahkan kata yang tidak ada
+#       akan menjadi pesan seperti "TIDAK ADA"
+
+# mengupdate data
+"""
+data_dict["cup"] = "ucup si tamfan"
+print(data_dict)
+data_dict["sept"] = "asep si kasep"
+print(data_dict)
+
+data_dict.update({"cup":"ucup surucup"})
+print(data_dict)
+data_dict.update({"faqih" : "faqihaza si kemren"})
+print(data_dict)
+"""
+# ----> Jika menggunakan update data yang ada 
+#       akan di perbarui 
+# ----> Jika tidak ada akan ditambahkan
+
+# Mendelete data pada dictinioary
+# del data_dict["faqih"]
+# print(data_dict)
+
+# Belajar Python [Dasar] - 40 - Looping Dictionary
+# looping dictinioary
+"""
+teman_teman = {
+    "cup":"ucup surucup",
+    "tong" :"otong surotong",
+    "dung" : "dudung surudung",
+    "sep" : "asep si kasep",
+    "bas" : "mas ambasafat",
+}
+"""
+# looping fisrt try ( Yang keluar adalah -key nya)
+# for teman in teman_teman:
+#     print(teman)
+
+# operator untuk mengambil item / iterables
+# keys = teman_teman.keys()
+# print(keys)
+
+# print("="*40)
+
+# for key in teman_teman.keys():
+#    print(f"key: {key},---->\t| value: {teman_teman[key]}|")
+#     print("="*40)
+
+# Operator untuk mengambil dict value nya saja
+# values = teman_teman.values()
+# print(values)
+
+# for value in teman_teman.values():
+#     print(value)
+
+# Operator untuk mengambil dua-duanya
+# items = teman_teman.items()
+# print(items)
+
+# for item in teman_teman.items():
+#    print(item)
+
+# Belajar Python [Dasar] - 41 - Copy & Pop Dictionary
+
+# copy
+"""
+teman_teman = {
+    "cup" : "ucup surucup",
+    "puy" : "si upuy",
+    "tom" : "si tomat",
+    "bud" : "budi setiawan"
+}
+
+friends = teman_teman.copy()
+
+print(f"teman_teman : {teman_teman}")
+print(f"friends : {friends}")
+
+teman_teman["cup"] = "ucup si kweren" 
+print(f"teman-teman : {teman_teman}")
+print(f"friends : {friends}")
+
+# pop dictionary ( berdasarkan key)
+dataTom = friends.pop("tom")
+print(f"data tom = {dataTom}\n")
+print(f"friends = {friends}\n")
+
+# popitem dictinioary (yang terakhir ajah)
+dataTerakhir = friends.popitem()
+print(f"data terakhir = {dataTerakhir}\n")
+print(f"friends = {friends}")
+"""
+# Belajar Python [Dasar] - 42 - Multi keys & Nesting Dictionary
+"""
+import datetime
+
+mahasiswa_1 = {
+    'nama' :'Ucup surucup',
+    'nim' : '19022001',
+    'sks_lulus': 170,
+    'beasiswa': False,
+    'lahir':datetime.datetime(2009,7,10)
+}
+
+mahasiswa_2 = {
+    'nama' :'Pak somat',
+    'nim' : '19022001',
+    'sks_lulus': 130,
+    'beasiswa': False,
+    'lahir':datetime.datetime(2001,4,10)
+}
+
+mahasiswa_3 = {
+    'nama' :'mas dudung',
+    'nim' : '19022001',
+    'sks_lulus': 230,
+    'beasiswa': False,
+    'lahir':datetime.datetime(2999,8,9)
+}
+
+data_mahasiswa = {
+    'MAH001':mahasiswa_1,
+    'MAH002':mahasiswa_2,
+    'MAH003':mahasiswa_3
+
+}
+print(f"{'KEY':<6} {'Nama':<17} {'SKS':<3} {'Beasiswa':<9} {'Lahir':<10}")
+print("-"*60)
+
+for mahasiswa in data_mahasiswa:
+    KEY = mahasiswa
+
+    NAMA = data_mahasiswa[KEY]['nama']
+    NIM = data_mahasiswa[KEY]['nim']
+    SKS = data_mahasiswa[KEY]['sks_lulus']
+    BEASISWA = data_mahasiswa[KEY]['beasiswa']
+    LAHIR = data_mahasiswa[KEY]['lahir'].strftime("%x")
+
+    print(f"{KEY:<6} {NAMA:<17} {SKS:<3} {BEASISWA:^9} {LAHIR:<10}")
+"""
+# Belajar Python [Dasar] - 43a - Latihan Dictionary Part 1
+# Belajar Python [Dasar] - 43b - Latihan Dictionary Part 2
+# Belajar Python [Dasar] - 44 - Pengenalan Fungsi
+def hello_world():
+    # fungsi menampilkan hello world
+    print("hello world ")
+    print("hallo sayang")
+    print("ini batasnya")
+
+hello_world()
+hello_world()
+# def digunakan untuk fungsi 
+# yg lebih menjorok kedalam dari def adalah isi dari fungsi
+# kalimat "hello world()" 2 terakhir adalah untuk memanggil fungsi
+
+
+# fungsi(),Jangan seperti ini
+def fungsi():
+    # pemanggilan fungsi harus setelah dibuat
+    print("ini adalah fungsi")
+
+fungsi()# Harus seperti ini ya adict adict
+
+# Belajar Python [Dasar] - 45 - Fungsi dengan argument
+# fungsi dengan argumen(input)
+
+# def nama_fungsi(argumen/input): def = definisi/definition
+    # badan fungsi
+def hello_world(nama):
+    # fungsi hello world menerima input dengan variable nama
+    print(f"Selamat Datang Dunia Wahai {nama}")
+
+hello_world("ucup")
+
+# program tambah 
+
+def tambah(angka_1,angka_2):
+    # fungsi tambah
+    hasil = angka_1 + angka_2
+    print(f"Hasil dari {angka_1} + {angka_2} = {hasil}")
+
+tambah(100,90)
+
+def say_hi(list_peserta):
+    # fungsi say_hi
+    data_peserta = list_peserta.copy()
+    for peserta in data_peserta:
+        print(f"Yang Terhormat {peserta}")
+
+anggota_boyband = ["Reyhan","Pak Somat","Budi","Mamang Agus"]
+
+say_hi(anggota_boyband)
+
+# Belajar Python [Dasar] - 46 - Fungsi dengan return
+
+# template fungsi dengan kembalian 
+# def nama_fungsi(argument):
+#   badan fungsi
+#   return output
+
+#fungsi kuadrat
+
+def kuadrat(input_angka):
+    # fungsi kuadrat
+    output_kuadrat = input_angka**2
+    return output_kuadrat
+
+y = kuadrat (5)
+print(y)
+
+print(kuadrat(6))
+
+z = 10 + kuadrat(7)
+print(z)
+
+# fungsi tambah 
+def fungsi_tambah(angka_1,angka_2):
+    # fungsi return dengan multi input
+    return angka_1 + angka_2
+
+a = fungsi_tambah(10,8)
+print(a)
+
+# fungsi dengan return banyak
+
+def operasi_matematika(angka_1,angka_2):
+    tambah = angka_1 + angka_2 
+    kurang = angka_1 - angka_2
+    kali = angka_1 * angka_2
+    bagi = angka_1 / angka_2 
+
+    return tambah,kurang,kali,bagi 
+
+k,l,m,n = operasi_matematika(9,5)
+print(f"Hasil tambah = {k}")
+print(f"Hasil kurang= {l}")
+print(f"Hasil kali = {m}")
+print(f"Hasil bagi = {n}")
+
+#  Belajar Python [Dasar] - 47 - Default Argument Fungsi
+
+# def fungsi(argument):
+# def fungsi(argument = nilai defaultnya)
+
+# contoh 1
+def say_hello(nama = "ganteng"):
+    # fungsi dengan default argumen
+    print(f"hello {nama}")
+
+say_hello("Ucup")
+say_hello()
+
+# contoh 2
+def sapa_nama(pesan,nama):
+    # fungsi dengan satu input biasa,dan satu default
+    print(f"hai {nama}, {pesan}")
+
+sapa_nama("hai ganteeenggg","dudung")
+
+# contoh 3
+def bilangan_pangkat(angka, pangkat = 2):
+    hasil = angka**pangkat
+    return hasil
+
+print(bilangan_pangkat(2,4))
+hasil = bilangan_pangkat(pangkat = 3, angka = 5)
+print(hasil)
+
+# contoh 4
+def fungsi(input1=1,input2=2,input3=3,input4=4):
+    hasil = input1 + input2 + input3 + input4
+    return hasil
+print(fungsi())
+print(fungsi(input3=10))
+
+# Belajar Python [Dasar] - 48 - Latihan Fungsi
+
+# Belajar Python [Dasar] - 49 - Type Hints pada Fungsi
+# type hints untuk fungsi 
+
+# bentuk standar fungsi 
+# studi kasus
+"""
+def fungsi(parameter):
+    hasil = parameter
+    print(hasil)
+
+fungsi(1)
+fungsi("ucup")
+fungsi(True)
+"""
+# semuanya akan terprint,yang masuk akal bukan string malah di kuadrat
+
+# penggunaan type hints
+"""
+import string
+def fungsi_dengan_hints(argument:int)-> int:
+    output = 10**argument
+    return output
+HASIL = fungsi_dengan_hints(2)
+print(HASIL)
+
+def display(argument:string):
+    print(argument)
+
+display("ucup")
+
+import os
+hasil = os.system("cls")
+print(hasil)
+
+# Belajar Python [Dasar] - 50 - *args pada fungsi ( memasukkan anyak data pada fungsi)
+
+def fungsi(nama,tinggi,berat):
+    print(f"{nama} punya {tinggi} dan berat {berat}")
+
+fungsi("ucup",170,40)
+
+def fungsi(data_list):
+    data = data_list.copy()
+    nama = data[0]
+    tinggi = data[1]
+    berat = data[2]
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi(["otong",100,120])
+
+# kenalan dengan args 
+
+def fungsi(*args):
+    nama = args[0]
+    tinggi = args[1]
+    berat = args[2]
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi("dudungg",120,120)
+
+# studi kasus
+def tambah(*data):
+    # data tipenya adalah tuple, dia bisa di iterasi
+    output = 0
+    for angka in data:
+        output += angka
+    return output
+
+hasil = tambah(1,2,3,4,5,6,7,8,9)
+print(f"hasil = {hasil}" )
+
+hasil = tambah(10,5,15)
+print(f"hasil = {hasil}")
+
+# Belajar Python [Dasar] - 51 - **kwargs pada fungsi
+
+def fungsi(nama,tinggi,berat):
+    # fungsi biasa
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi("ucup",183,79)
+
+def fungsi(**kwargs):
+    # fungsi kwargs
+    nama = kwargs["nama"]
+    tinggi = kwargs["tinggi"]
+    berat = kwargs["berat"]
+    print(f"{nama} punya tinggi {tinggi} dan punya berat {berat}")
+fungsi(nama="ucup",tinggi=183,berat=79)
+# studi kasus
+
+def math(*args,**kwargs):
+    output = 0
+    if kwargs ["option"] == "tambah":
+        for angka in args:
+            output +=angka
+    elif kwargs["option"] == "kali":
+        output = 1
+        for angka in args:
+            output *= angka
+    else:
+        print("tidak ada operasi")
+
+    return output
+
+hasil = math(1,2,3,4,option="tambah")
+
+print(f"hasil jumlah {hasil}")
+hasil = math(1,2,3,4,option="kali")
+print(f"hasil kali {hasil}")
+"""
+# Belajar Python [Dasar] - 52 - Anonymous dan Lambda Function
+
+# def f_kuadrat(angka):
+#    return angka**2
+
+# print(f"hasil fungsi kuadrat = {f_kuadrat(3)}")
+
+# kita coba dengan lambda
+output = lambda:argument
+kuadrat = lambda angka:angka**2
+print(f"hasil lambda kuadrat = {kuadrat(5)}")
+
+# bisa juga buat 2 input
+pangkat = lambda num,pow : num**pow
+print(f"hasil lambda pangkat = {pangkat(4,2)}")
+
+# kegunaan 
+
+# sorting untuk list biasa
+data_list = ["otong","ucup","badung"]
+data_list.sort()
+print(f"data yang sudah di urutkan = {data_list}")
+
+# sorting dia pakai panjang
+def panjang_nama(nama):#(jikan ingin menggunakan fungsi)
+    return len(nama)
+
+data_list.sort(key=len)
+print(f"data yang sudah di urutkan dengan len = {data_list}")
+
+# sort pakai lambda
+data_list = ["otong","ucup","dudung"]
+data_list.sort(key=lambda nama:len(nama))
+print(f"data yang sudah di urutkan dengan lambda = {data_list}")
+
+# filter
+data_angka = [1,2,3,4,5,6,7,8,9,10,11,12]
+
+def kurang_dari_lima(angka):
+    return angka < 5
+
+data_angka_baru = list(filter(kurang_dari_lima,data_angka))
+data_angka_baru = list(filter(lambda x:x<5,data_angka))
+
+print (data_angka_baru)
+
+# kasus genap
+data_genap = list(filter(lambda x:(x%2==0),data_angka))
+print(data_genap)
+
+# kasus ganjil
+data_ganjil = list(filter(lambda x:(x%2!=0),data_angka))
+print(data_ganjil)
+
+# kelipatan 3
+data_kelipatan_3 = list(filter(lambda x:(x%3==0),data_angka))
+print(data_kelipatan_3)
+
+# anonymous function 
+# currying <--- Haskell Curry
+
+def pangkat(angka,n):
+    hasil = angka**n
+    return hasil
+
+data_hasil = pangkat(5,2)
+print(f"fungsi biasa = {data_hasil}")
+
+# dengan currying menjadi
+
+def pangkat(n):
+    return lambda angka:angka**n
+
+pangkat2 = pangkat(2)
+print(f"pangkat 2 = {pangkat2(5)}")
+pangkat3 = pangkat(3)
+print(f"pangkat 3 = {pangkat3(3)}")
+print(f"pangkat bebas = {pangkat(4)(5)}")
+
+# Belajar Python [Dasar] - 53 - Global dan Local Scope
+
+nama_global= " otong" # <-- disebut variabel global 
+
+# akses variabel global dalam loop
+def fungsi():
+    print(f"fungsi menampilkan {nama_global}")
+    
+    
+fungsi()
+
+# akses variabel global dalam loop 
+for i in range(0,5):
+    print(f"loop {i} - {nama_global}")
+
+# percabangan 
+if True:
+    print(f"menampilkan {nama_global}")
+
+
+# variabel local scope 
+def fungsi2():
+    nama_local  = "ucup" # <--- variabel lokal scope 
+
+fungsi2()
+# print(nama_local) <--- Tidak bisa dilakukan 
+
+## contoh penggunaan 1 penggunaan akses variabel 
+def say_hi_otong():
+        print(f"hello {nama}")
+
+nama = "otong"
+say_hi_otong()
+
+## contoh 2 merubah variabel global
+angka = 0
+name = "ucup"
+def ubah(nilai_baru,nama_baru):
+    global angka # fungsi gloal untuk mendapatkan akses merubah variabel
+    global name
+    angka = nilai_baru
+    name = nama_baru
+print(f"sebelum {angka,name}")
+ubah(10,"otong")
+print(f"sesudah {angka,name}")
+
+# contoh3 
+angka = 0
+
+for i in range(0,5):
+    angka += 1
+    angka_dummy = 0
+
+print(angka)
+print(angka_dummy)
+
+if True:
+    angka = 10
+    angka_dummy = 10
+
+print(angka)
+print(angka_dummy)
