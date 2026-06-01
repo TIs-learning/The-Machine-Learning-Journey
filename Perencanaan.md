@@ -4,11 +4,12 @@ Perencanaan Sampai Selesai
 Perencanaan Folder
 
 # Python
-- Melengkapi Intermediate
+- Melengkapi Intermediate (Opsional Banget, kalau mau project python disini aja)
 
 # Numpy
 - Mengerjakan Roadmap Numpy
+- Mengerjakan file adilshimam8
 
 # Pandas
-- Mengerjakan Roadmap Pandas
+- Mengerjakan file adilshimam
   
