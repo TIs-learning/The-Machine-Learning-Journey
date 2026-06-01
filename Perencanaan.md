@@ -12,4 +12,7 @@ Perencanaan Folder
 
 # Pandas
 - Mengerjakan file adilshimam
+
+# Data visualization
+- mengerjakan file adilshimam8 (Matplotlib dan seaborn)
   
