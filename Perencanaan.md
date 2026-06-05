@@ -9,8 +9,8 @@ Perencanaan Folder
 - Melengkapi Intermediate (Opsional Banget, kalau mau project python disini aja)
 
 # Numpy
-- Mengerjakan Roadmap Numpy
-- Mengerjakan file adilshimam8
+- File Numpy sudah dikerjakan habis
+- File Numpy 100 exercise baru dikerjakan sampai no 13
 
 # Pandas
 - Mengerjakan file adilshimam
