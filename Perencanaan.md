@@ -17,4 +17,7 @@ Perencanaan Folder
 
 # Data visualization
 - mengerjakan file adilshimam8 (Matplotlib dan seaborn)
+
+# Machine Learning Fundamental
+- buat file lanjutan yang membahas 19 poin tersebut
   
