@@ -3,6 +3,11 @@ Perencanaan Sampai Selesai
 - Lengkapi 5 sampai 6 folder ini Sampai full
 - Selesaikan Semua Tahap testing the waternya
 
+Besok
+- Menyelesaikan math
+- Merapikan github
+- Menyelesaikan Titanic dengan End to end project adilshimam8
+
 Perencanaan Folder
 
 # Python
