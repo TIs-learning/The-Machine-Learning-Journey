@@ -1,5 +1,9 @@
-Untuk Sumber Pembelajaran sumbernya masih sama, dikarenakan keterbatasan Matematika sumbernya samain aja
+## Note
+Untuk Sumber Pembelajaran sumbernya masih sama, meski saya tidak belajar fundamental statistics dari repository ini, tapi catatan ini sangat lengkap, saya belajar kebanyakan menonton dari youtube dan hanya bertanya pada AI dan prakteknya pada Dataset sederhana secara konsep dan perhitungannya, Jika belum pernah belajar Statistics Fundamental Sederhana saya menyarankan untuk menonton Youtube: Indonesia Belajar dan Pelajari file saya yang telah di translatenya.
 
+---
+
+## Sumber Belajar
 > # `Cheatsheets for Revision`
 
 https://static1.squarespace.com/static/5a5028498a02c7e658ff8f67/t/5a84aaf8e2c4835ce8d571dd/1518643960840/Statisticssheet.pdf
