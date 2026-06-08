@@ -2,7 +2,18 @@
 Untuk Sumber Pembelajaran sumbernya masih sama, meski saya tidak belajar fundamental statistics dari repository ini, tapi catatan ini sangat lengkap, saya belajar kebanyakan menonton dari youtube dan hanya bertanya pada AI dan prakteknya pada Dataset sederhana secara konsep dan perhitungannya, Jika belum pernah belajar Statistics Fundamental Sederhana saya menyarankan untuk menonton Youtube: Indonesia Belajar dan Pelajari file saya yang telah di translatenya.
 
 ---
+## Daftar Isi
+1. Apa itu statistika
+2. Jenis jenis utama statistika
+3. Jenis data dalam statistika
+4. Ukuran Pemusatan data
+5. Ukuran Penyebaran data
+6. Quantiles dan Percentalsi
+7. Ringkasan 5 angka dan Boxplot
+8. Grafik untuk Analisis Univariat
+9. Grafik untuk Analisis Bivariat
 
+---
 ## Sumber Belajar
 > # `Cheatsheets for Revision`
 
