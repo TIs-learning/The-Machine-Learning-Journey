@@ -8,6 +8,8 @@ Besok
 - Merapikan github
 - Menyelesaikan Titanic dengan End to end project adilshimam8
 
+Sebenarnya, Bagian testing the waters sudah, cuma kayak perlu di lengkapi bagian EDA nya, kayak Univariate, Bivariate, and Multivariate Anaylysis
+
 Perencanaan Folder
 
 # Python
