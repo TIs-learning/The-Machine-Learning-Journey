@@ -22,6 +22,9 @@ Perencanaan Folder
 # Pandas
 - Mengerjakan file adilshimam
 
+# feature preprocessing
+- imbalaced dataset sudah
+  
 # Data visualization
 - mengerjakan file adilshimam8 (Matplotlib dan seaborn)
 
